@@ -39,7 +39,7 @@ pip install -e .
 Back to curent path, and replace the habitat folder in habitat-lab for the multi-robot setting: 
 
 ```
-mv habitat enter-your-path/habitat-lab
+mv -r habitat enter-your-path/habitat-lab
 ```
 
 - Install [pytorch](https://pytorch.org/) according to your system configuration. The code is tested on torch v2.0.1, torchvision 0.15.2. 
