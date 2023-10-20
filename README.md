@@ -62,8 +62,8 @@ Download the [segmentation model](https://drive.google.com/file/d/1U0dS44DIPZ22n
 ## Setup
 Clone the repository and install other requirements:
 ```
-git clone https://github.com/ybgdgh/L3MVN
-cd L3MVN/
+git clone https://github.com/ybgdgh/Co-NavGPT
+cd Co-NavGPT/
 pip install -r requirements.txt
 ```
 
@@ -84,7 +84,7 @@ Object-Goal-Navigation/
 
 
 ### For evaluation: 
-For evaluating the framework:
+For evaluating the framework, you need to setup your openai api keys in the 'exp_main_gpt.py', then run:
 ```
 python exp_main_gpt.py
 ```
