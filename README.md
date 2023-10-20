@@ -45,10 +45,6 @@ mv -r multi-robot-setting/habitat enter-your-path/habitat-lab
 - Install [pytorch](https://pytorch.org/) according to your system configuration. The code is tested on torch v2.0.1, torchvision 0.15.2. 
 
 - Install [detectron2](https://github.com/facebookresearch/detectron2/) according to your system configuration. If you are using conda:
-```
-python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu102/torch1.6/index.html #(Linux with GPU)
-CC=clang CXX=clang++ ARCHFLAGS="-arch x86_64" python -m pip install 'git+https://github.com/facebookresearch/detectron2.git' #(Mac OS)
-```
 
 2. Download HM3D_v0.2 datasets:
 
