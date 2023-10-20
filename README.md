@@ -36,10 +36,10 @@ cd habitat-lab; git checkout tags/challenge-2022;
 pip install -e .
 ```
 
-Back to curent path, and replace the habitat folder in habitat-lab for the multi-robot setting: 
+Back to the curent repo, and replace the habitat folder in habitat-lab rope for the multi-robot setting: 
 
 ```
-mv -r habitat enter-your-path/habitat-lab
+mv -r multi-robot-setting/habitat enter-your-path/habitat-lab
 ```
 
 - Install [pytorch](https://pytorch.org/) according to your system configuration. The code is tested on torch v2.0.1, torchvision 0.15.2. 
