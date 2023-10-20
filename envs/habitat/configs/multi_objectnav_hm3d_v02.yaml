@@ -1,0 +1,61 @@
+# @package _global_
+
+defaults:
+  - /habitat: habitat_config_base
+  - /habitat/task: objectnav
+  - /habitat/simulator/agents@habitat.simulator.agents.agent_0: rgbd_agent
+  - /habitat/simulator/agents@habitat.simulator.agents.agent_1: rgbd_agent
+  # - /habitat/dataset/objectnav: hm3d_v2
+  - _self_
+
+habitat:
+  environment:
+    max_episode_steps: 500
+
+  simulator:
+    turn_angle: 30
+    tilt_angle: 30
+    action_space_config: "v1"
+    agents_order:
+      - agent_0
+      - agent_1
+    agents:
+      agent_0:
+        sim_sensors:
+          rgb_sensor:
+            width: 640
+            height: 480
+            hfov: 79
+            position: [0, 0.88, 0]
+          depth_sensor:
+            width: 640
+            height: 480
+            hfov: 79
+            min_depth: 0.5
+            max_depth: 5.0
+            position: [0, 0.88, 0]
+        height: 0.88
+        radius: 0.18
+      agent_1:
+        sim_sensors:
+          rgb_sensor:
+            width: 640
+            height: 480
+            hfov: 79
+            position: [0, 0.88, 0]
+          depth_sensor:
+            width: 640
+            height: 480
+            hfov: 79
+            min_depth: 0.5
+            max_depth: 5.0
+            position: [0, 0.88, 0]
+        height: 0.88
+        radius: 0.18
+    habitat_sim_v0:
+      gpu_device_id: 0
+      allow_sliding: False
+  dataset:
+    type: ObjectNav-v1
+    split: val
+    data_path: "data/datasets/objectnav_hm3d_v2/{split}/{split}.json.gz"
