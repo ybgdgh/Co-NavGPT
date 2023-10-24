@@ -20,7 +20,7 @@ The code has been tested only with Python 3.10.8, CUDA 11.7.
 1. Installing Dependencies
 - We use adjusted versions of [habitat-sim](https://github.com/facebookresearch/habitat-sim) and [habitat-lab](https://github.com/facebookresearch/habitat-lab) as specified below:
 
--Installing habitat-sim:
+- Installing habitat-sim:
 ```
 git clone https://github.com/facebookresearch/habitat-sim.git
 cd habitat-sim; git checkout tags/challenge-2022; 
@@ -29,7 +29,7 @@ python setup.py install --headless
 python setup.py install # (for Mac OS)
 ```
 
--Installing habitat-lab:
+- Installing habitat-lab:
 ```
 git clone https://github.com/facebookresearch/habitat-lab.git
 cd habitat-lab; git checkout tags/challenge-2022; 
@@ -70,7 +70,7 @@ pip install -r requirements.txt
 ### Setting up datasets
 The code requires the datasets in a `data` folder in the following format (same as habitat-lab):
 ```
-Object-Goal-Navigation/
+Co-NavGPT/
   data/
     scene_datasets/
     matterport_category_mappings.tsv

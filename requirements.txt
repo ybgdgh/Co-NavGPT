@@ -4,3 +4,4 @@ scikit-image==0.15.0
 numpy>=1.20.2
 ifcfg
 openai
+tensorboard
