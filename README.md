@@ -3,7 +3,7 @@
 
 This is our ongoing work. We proposed a new framework to explore and search for the target in unknown environment based on Large Language Model. Our work is based on [SemExp](https://github.com/devendrachaplot/Object-Goal-Navigation) and [L3MVN](https://sites.google.com/view/l3mvn), implemented in PyTorch.
 
-**Author:** Bangguo Yu, Kailai Li, Hamidreza Kasaei and Ming Cao
+**Author:** Bangguo Yu, Kailai Li, Hamidreza Kasaei, and Ming Cao
 
 **Affiliation:** University of Groningen
 
