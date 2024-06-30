@@ -1,15 +1,15 @@
-# Co-NavGPT: Multi-Robot Cooperative Visual Semantic Navigation using Large Language Models
 
-This work is based on our paper. We proposed a new framework to explore and search for the target in unknown environment based on Large Language Model. Our work is based on [SemExp](https://github.com/devendrachaplot/Object-Goal-Navigation) and [L3MVN](https://sites.google.com/view/l3mvn), implemented in PyTorch.
+# Towards Collaborative Semantic Visual Navigation via Large Language Models
 
-**Author:** Bangguo Yu, Hamidreza Kasaei and Ming Cao
+This is our ongoing work. We proposed a new framework to explore and search for the target in unknown environment based on Large Language Model. Our work is based on [SemExp](https://github.com/devendrachaplot/Object-Goal-Navigation) and [L3MVN](https://sites.google.com/view/l3mvn), implemented in PyTorch.
+
+**Author:** Bangguo Yu, Kailai Li, Hamidreza Kasaei and Ming Cao
 
 **Affiliation:** University of Groningen
 
 ## Abstract
 
-In advanced human-robot interaction tasks, visual target navigation is crucial for autonomous robots navigating unknown environments. While numerous approaches have been developed in the past, most are designed for single-robot operations, which often suffer from reduced efficiency and robustness due to environmental complexities. Furthermore, learning policies for multi-robot collaboration is resource-intensive. To address these challenges, we propose Co-NavGPT, an innovative framework that integrates Large Language Models (LLMs) as a global planner for multi-robot cooperative visual target navigation. Co-NavGPT encodes the explored environment data into prompts, enhancing LLMs’ scene comprehension. It then assigns exploration frontiers to
-each robot for efficient target search. Experimental results on Habitat-Matterport 3D (HM3D) demonstrate that Co-NavGPT surpasses existing models in success rates and efficiency without any learning process, demonstrating the vast potential of LLMs in multi-robot collaboration domains. The supplementary video, prompts, and code can be accessed via the following link: https://sites.google.com/view/co-navgpt.
+Target-driven visual navigation in an unknown environment plays crucial roles towards reaching high-performance autonomy and human-machine interactions for intelligent robots. Most existing approaches for mapless visual navigation focus on single-robot operations, which  often lack  efficiency and robustness in complex environments. Meanwhile, policy learning for multi-robot collaboration is resource-demanding. To address these challenges, we propose Co-NavGPT, an innovative multi-robot framework integrating large language models (LLMs) as a global planner for collaborative visual navigation. We conduct experiments in synthetic environments for evaluation. Numerical results show superior performance of Co-NavGPT over existing approaches in terms of success rate and efficiency, not requiring the learning procedure and yet demonstrating great potential of exploiting LLMs in multi-robot collaboration. We open-source our current implementation at https://sites.google.com/view/co-navgpt.
 
 ![image-20200706200822807](img/framework.png)
 
